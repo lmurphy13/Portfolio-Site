@@ -218,7 +218,7 @@ function Projects() {
               </CardActionArea>
               <CardActions>
                 <a
-                  href="https://github.com/lmurphy13/Account-Balance-Mailer"
+                  href="https://github.com/lmurphy13/COSC-3550-Assignment-5"
                   target="_blank"
                 >
                   <GitHub className={classes.icon} />
