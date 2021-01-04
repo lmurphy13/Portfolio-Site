@@ -307,7 +307,10 @@ function Projects() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <a href="" target="_blank">
+                <a
+                  href="https://github.com/lmurphy13/Portfolio-Site"
+                  target="_blank"
+                >
                   <GitHub className={classes.icon} />
                 </a>
               </CardActions>

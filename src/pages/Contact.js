@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   grid: {
     fontFamily: "IBM Plex Sans, sans-serif",
     fontSize: "120%",
-    marginBottom: "2%"
+    marginBottom: "2%",
   },
 
   link: {
@@ -68,7 +68,7 @@ function Contact() {
       </div>
 
       <body>
-      <Grid
+        <Grid
           container
           spacing={0}
           justify="center"
@@ -81,7 +81,6 @@ function Contact() {
           <Grid item xs={4}></Grid>
         </Grid>
 
-       
         <Grid
           container
           spacing={0}
@@ -154,26 +153,23 @@ function Contact() {
           justify="center"
           alignItems="center"
           className={classes.grid}
-          style={{marginBottom: "7%"}}
+          style={{ marginBottom: "7%" }}
         >
-
-        <p>
-          Here's a link to my{" "}
-          <a
-            className={classes.link}
-            href="https://www.cs.mu.edu/~lmurphy9/"
-            target="_blank"
-          >
-            academic website
-          </a>
-          . It's mostly for fun, but contains a listing of the courses I've
-          taken.
-        </p>
-
+          <p>
+            Here's a link to my{" "}
+            <a
+              className={classes.link}
+              href="https://www.cs.mu.edu/~lmurphy9/"
+              target="_blank"
+            >
+              academic website
+            </a>
+            . It's mostly for fun, but contains a listing of the courses I've
+            taken.
+          </p>
         </Grid>
 
         <div className={classes.filler}></div>
-        
       </body>
 
       <footer>
