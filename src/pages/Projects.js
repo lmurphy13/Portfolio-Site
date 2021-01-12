@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { GitHub } from "@material-ui/icons";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
+import Badge from "../components/Badge.js";
 import drift from "../images/Drift.gif";
 import terminal from "../images/terminal.png";
 import trek from "../images/Trek.png";
@@ -138,6 +139,7 @@ function Projects() {
                 <a href="https://github.com/lmurphy13/Drift" target="_blank">
                   <GitHub className={classes.icon} />
                 </a>
+                <Badge text="Processing" color="#1d517e" />
               </CardActions>
             </Card>
           </Grid>
@@ -180,6 +182,7 @@ function Projects() {
                 >
                   <GitHub className={classes.icon} />
                 </a>
+                <Badge text="Java" color="red" />
               </CardActions>
             </Card>
           </Grid>
@@ -223,6 +226,7 @@ function Projects() {
                 >
                   <GitHub className={classes.icon} />
                 </a>
+                <Badge text="Java" color="red" />
               </CardActions>
             </Card>
           </Grid>
@@ -264,6 +268,7 @@ function Projects() {
                 >
                   <GitHub className={classes.icon} />
                 </a>
+                <Badge text="C" color="#f2e01a" textColor="black"/>
               </CardActions>
             </Card>
           </Grid>
@@ -300,9 +305,7 @@ function Projects() {
                     component="p"
                     className={classes.type}
                   >
-                    This website was first built with basic HTML/CSS to learn
-                    basic web development skills. The current version was
-                    written with ReactJS and Material-UI.
+                    The website you're currently looking at. 
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -313,6 +316,9 @@ function Projects() {
                 >
                   <GitHub className={classes.icon} />
                 </a>
+
+                <Badge text="React.js" color="#61dafb" textColor="black"/>
+                <Badge text="Material-UI" color="#009688" />
               </CardActions>
             </Card>
           </Grid>

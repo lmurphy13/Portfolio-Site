@@ -62,7 +62,7 @@ function Home() {
         <p className={classes.greeting}>Hi! I'm Liam</p>
       </div>
 
-      <body>
+      <body class="full-height">
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <img src={liam} alt="Liam Murphy" />

@@ -67,7 +67,7 @@ function Contact() {
         <NavBar />
       </div>
 
-      <body>
+      <body class="full-height">
         <Grid
           container
           spacing={0}

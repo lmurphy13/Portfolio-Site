@@ -54,7 +54,7 @@ function Research() {
         <NavBar />
       </div>
 
-      <body>
+      <body class="full-height">
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <h3>Research Experience</h3>
@@ -102,7 +102,7 @@ function Research() {
           </Grid>
         </Grid>
 
-        <div className={classes.filler}></div>
+        
       </body>
 
       <footer>

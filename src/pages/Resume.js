@@ -46,12 +46,12 @@ function Resume() {
         <NavBar />
       </div>
 
-      <body>
+      <body class="full-height">
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <embed
             src={resume}
             type="application/pdf"
-            height={1000}
+            height={800}
             width={800}
           />
         </Grid>

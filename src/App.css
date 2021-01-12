@@ -1,5 +1,6 @@
-body {
+body.full-height {
   margin: 0;
+  height: 88vh;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
