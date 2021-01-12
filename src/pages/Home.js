@@ -50,6 +50,10 @@ const useStyles = makeStyles({
   link: {
     color: "#468cce",
   },
+
+  liam: {
+    width: "22vw"
+  }
 });
 
 function Home() {
@@ -65,7 +69,7 @@ function Home() {
       <body class="full-height">
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
-            <img src={liam} alt="Liam Murphy" />
+            <img className={classes.liam} src={liam} alt="Liam Murphy" />
           </Grid>
 
           <Grid item xs={4}>

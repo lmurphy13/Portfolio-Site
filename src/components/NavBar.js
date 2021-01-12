@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import lava from "../images/lava.jpg";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -45,6 +44,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/"
+            exact
           >
             Home
           </NavLink>
@@ -52,6 +52,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/about"
+            exact
           >
             About
           </NavLink>
@@ -59,6 +60,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/research"
+            exact
           >
             Research
           </NavLink>
@@ -66,6 +68,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/projects"
+            exact
           >
             Projects
           </NavLink>
@@ -74,6 +77,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/resume"
+            exact
           >
             Resume
           </NavLink>
@@ -81,6 +85,7 @@ function NavBar() {
             className={classes.link}
             activeClassName={classes.active}
             to="/contact"
+            exact
           >
             Contact
           </NavLink>
