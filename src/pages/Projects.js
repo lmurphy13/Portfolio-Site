@@ -17,6 +17,7 @@ import trek from "../images/Trek.png";
 import console from "../images/consolegame.png";
 import lava from "../images/lava.jpg";
 import react from "../images/react.png";
+import perlin from "../images/perlin.gif";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -268,7 +269,7 @@ function Projects() {
                 >
                   <GitHub className={classes.icon} />
                 </a>
-                <Badge text="C" color="#f2e01a" textColor="black"/>
+                <Badge text="C" color="#f2e01a" textColor="black" />
               </CardActions>
             </Card>
           </Grid>
@@ -305,7 +306,7 @@ function Projects() {
                     component="p"
                     className={classes.type}
                   >
-                    The website you're currently looking at. 
+                    The website you're currently looking at.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -317,13 +318,61 @@ function Projects() {
                   <GitHub className={classes.icon} />
                 </a>
 
-                <Badge text="React.js" color="#61dafb" textColor="black"/>
+                <Badge text="React.js" color="#61dafb" textColor="black" />
                 <Badge text="Material-UI" color="#009688" />
               </CardActions>
             </Card>
           </Grid>
 
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2}>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Perlin Noise"
+                  height="200"
+                  image={perlin}
+                  title="Perlin Noise"
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="h2"
+                    className={classes.type}
+                  >
+                    Perlin Noise Animation
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    component="p"
+                    className={classes.type}
+                  >
+                    A Perlin Noise animation written in Processing. It is
+                    inspired from{" "}
+                    <a
+                      className={classes.link}
+                      href="https://www.youtube.com/watch?v=IKB1hWWedMk"
+                    >
+                      this{" "}
+                    </a>{" "}
+                    video.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <a
+                  href="https://github.com/lmurphy13/PerlinNoise"
+                  target="_blank"
+                >
+                  <GitHub className={classes.icon} />
+                </a>
+
+                <Badge text="Processing" color="#1d517e" />
+              </CardActions>
+            </Card>
+          </Grid>
           <Grid item xs={2}></Grid>
           <Grid item xs={2}></Grid>
         </Grid>

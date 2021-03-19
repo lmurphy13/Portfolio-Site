@@ -7,6 +7,7 @@ import Research from "./pages/Research";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import Publications from "./pages/Publications";
 import "./App.css";
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/research" component={Research} />
+      <Route path="/publications" component={Publications} />
       <Route path="/projects" component={Projects} />
       <Route path="/resume" component={Resume} />
       <Route path="/contact" component={Contact} />

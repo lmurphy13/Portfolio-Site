@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
+import Job from "../components/Job.js";
 import resume from "../docs/Resume.pdf";
 import lava from "../images/lava.jpg";
 import "../App.css";
@@ -35,6 +36,19 @@ const useStyles = makeStyles({
     position: "relative",
     height: "7vh",
   },
+
+  bar: {
+    // display: "inlineBlock",
+    // borderLeft: "1px solid white",
+    // margin: "0 10px",
+    // height: "120px"
+    position: "absolute",
+    left: "-17px",
+    borderLeft: "1px solid white",
+    height: "85%",
+    width: "0.5px",
+    top: "50px",
+  },
 });
 
 function Resume() {
@@ -46,14 +60,9 @@ function Resume() {
         <NavBar />
       </div>
 
-      <body class="full-height">
+      <body>
         <Grid container spacing={0} justify="center" className={classes.grid}>
-          <embed
-            src={resume}
-            type="application/pdf"
-            height={800}
-            width={800}
-          />
+          <embed src={resume} type="application/pdf" height={800} width={800} />
         </Grid>
       </body>
 

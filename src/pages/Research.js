@@ -102,7 +102,20 @@ function Research() {
           </Grid>
         </Grid>
 
-        
+        {/* <Grid container spacing={0} justify="center" className={classes.grid}>
+          <Grid item xs={4}>
+            <h3>Independent Writings</h3>
+            <p>
+              See below for some essays and articles I've written on various topics interesting to me. 
+              These essays are not affiliated with my formal research at Marquette University.
+            </p>
+
+          </Grid>
+
+          <Grid item xs={4}>
+
+          </Grid>
+        </Grid> */}
       </body>
 
       <footer>

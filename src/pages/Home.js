@@ -52,8 +52,8 @@ const useStyles = makeStyles({
   },
 
   liam: {
-    width: "22vw"
-  }
+    width: "22vw",
+  },
 });
 
 function Home() {
@@ -117,9 +117,20 @@ function Home() {
             </p>
 
             <p>
-              I will be seeking a full-time position in the Milwaukee area while
-              I complete my Master's Degree.
+              In June 2021, I will begin my career as a Software Engineer at{" "}
+              <a
+                className={classes.link}
+                href="https://astronautics.com/"
+                target="_blank"
+              >
+                Astronautics
+              </a>
+              .
             </p>
+
+            {/* <p>
+              Check out my retro-styled Star Trek <a className={classes.link} href="https://www.liammurphy.me/trek" target="_blank">fan site</a>!
+            </p> */}
           </Grid>
         </Grid>
       </body>

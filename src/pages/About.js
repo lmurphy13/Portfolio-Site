@@ -112,7 +112,7 @@ function About() {
 
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
-          <p>
+            <p>
               At Marquette, I live with about sixty other Evans Scholars who
               come from similar backgrounds. I served as the treasurer of
               Marquette's chapter of{" "}
@@ -136,7 +136,7 @@ function About() {
             </p>
           </Grid>
           <Grid item xs={4}>
-          <img
+            <img
               className={classes.es}
               src={es}
               alt="evans scholars foundation"
@@ -146,7 +146,7 @@ function About() {
 
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
-          <h3>Personal Interests</h3>
+            <h3>Personal Interests</h3>
             <p>
               Since 2012 I have been a member of the{" "}
               <a
@@ -172,13 +172,13 @@ function About() {
             </p>
           </Grid>
           <Grid item xs={4}>
-          <img className={classes.parade} src={parade} alt="parade" />
+            <img className={classes.parade} src={parade} alt="parade" />
           </Grid>
         </Grid>
 
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
-          <h3>Teaching</h3>
+            <h3>Teaching</h3>
             <p>
               During the fall semester of 2019, I co-taught Introduction to
               Computer Science at a public high school in Milwaukee, Wisconsin.
@@ -202,11 +202,9 @@ function About() {
             </p>
           </Grid>
           <Grid item xs={4}>
-          <img className={classes.teals} src={teals} alt="tealsk12" />
+            <img className={classes.teals} src={teals} alt="tealsk12" />
           </Grid>
         </Grid>
-
-
 
         {/* <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>

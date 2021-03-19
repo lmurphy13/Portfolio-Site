@@ -64,6 +64,14 @@ function NavBar() {
           >
             Research
           </NavLink>
+          {/* <NavLink
+            className={classes.link}
+            activeClassName={classes.active}
+            to='/publications'
+            exact
+          >
+            Publications
+          </NavLink> */}
           <NavLink
             className={classes.link}
             activeClassName={classes.active}

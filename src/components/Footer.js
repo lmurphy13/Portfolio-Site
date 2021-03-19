@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     textAlign: "center",
     color: "white",
     fontFamily: "IBM Plex Sans, sans-serif",
-   // position: "absolute",
+    // position: "absolute",
     bottom: 0,
     width: "100%",
     height: "2.5rem",
