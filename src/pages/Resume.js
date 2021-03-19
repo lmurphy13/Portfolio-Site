@@ -35,6 +35,19 @@ const useStyles = makeStyles({
     position: "relative",
     height: "7vh",
   },
+
+  bar: {
+    // display: "inlineBlock",
+    // borderLeft: "1px solid white",
+    // margin: "0 10px",
+    // height: "120px"
+    position: "absolute",
+    left: "-17px",
+    borderLeft: "1px solid white",
+    height: "85%",
+    width: "0.5px",
+    top: "50px",
+  },
 });
 
 function Resume() {
@@ -46,14 +59,9 @@ function Resume() {
         <NavBar />
       </div>
 
-      <body class="full-height">
+      <body>
         <Grid container spacing={0} justify="center" className={classes.grid}>
-          <embed
-            src={resume}
-            type="application/pdf"
-            height={800}
-            width={800}
-          />
+          <embed src={resume} type="application/pdf" height={800} width={800} />
         </Grid>
       </body>
 
