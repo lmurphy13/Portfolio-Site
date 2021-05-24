@@ -74,7 +74,7 @@ function Home() {
 
           <Grid item xs={4}>
             <p>
-              I am a fourth-year student at{" "}
+              I am a recent graduate of{" "}
               <a
                 className={classes.link}
                 href="https://www.marquette.edu"
@@ -82,34 +82,18 @@ function Home() {
               >
                 Marquette University
               </a>
-              . I am pursuing a Bachelor of Science degree in Computer Science
-              with a minor in Spanish in the Departments of{" "}
-              <a
-                className={classes.link}
-                href="https://www.marquette.edu/computer-science/"
-                target="_blank"
-              >
-                Computer Science
-              </a>{" "}
-              and{" "}
-              <a
-                className={classes.link}
-                href="https://www.marquette.edu/languages-literatures-cultures/"
-                target="_blank"
-              >
-                Languages, Literatures, and Cultures.
-              </a>
+              . I completed my Bachelor of Science degree in Computer Science
+              with a minor in Spanish in May 2021.
             </p>
 
             <p>
-              Additionally, I will be continuing my education post-graduation at
-              Marquette University. I have been admitted to the{" "}
+              Additionally, I am pursuing my {" "}
               <a
                 className={classes.link}
                 href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
                 target="_blank"
               >
-                Master of Science in Computing Accelerated Degree Program
+                Master of Science degree in Computing
               </a>{" "}
               with a concentration in Information Assurance and Cyber Defense. I
               began graduate-level coursework counting towards this degree in
@@ -117,7 +101,7 @@ function Home() {
             </p>
 
             <p>
-              In June 2021, I will begin my career as a Software Engineer at{" "}
+              I have been working as a Software Engineer at{" "}
               <a
                 className={classes.link}
                 href="https://astronautics.com/"
@@ -125,7 +109,7 @@ function Home() {
               >
                 Astronautics
               </a>
-              .
+              {" "}since June 2021.
             </p>
 
             {/* <p>

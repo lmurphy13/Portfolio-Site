@@ -100,7 +100,7 @@ function About() {
               </a>{" "}
               and was fortunate enough to receive a four-year full tuition and
               housing scholarship to Marquette University in Milwaukee,
-              Wisconsin. During my time as an Marquette Evans Scholar, I have
+              Wisconsin. During my time as an Marquette Evans Scholar, I 
               had the opportunity to serve as the chapter's Vice President of
               Finance.
             </p>
@@ -113,7 +113,7 @@ function About() {
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <p>
-              At Marquette, I live with about sixty other Evans Scholars who
+              At Marquette, I lived with about sixty other Evans Scholars who
               come from similar backgrounds. I served as the treasurer of
               Marquette's chapter of{" "}
               <a
@@ -124,7 +124,7 @@ function About() {
                 the Association for Computing Machinery
               </a>{" "}
               for the 2019-2020 school year. I was re-elected to the same
-              position for the 2020-2021 school year. I am also a member of the{" "}
+              position for the 2020-2021 school year. I was also a member of the{" "}
               <a
                 className={classes.link}
                 href="https://marquette.presence.io/organization/cyber-security-club"

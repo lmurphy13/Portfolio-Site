@@ -96,7 +96,7 @@ function Contact() {
 
         <Grid
           container
-          spacing={0}
+          spacing={6}
           justify="center"
           alignItems="center"
           className={classes.grid}
