@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import fenwick from "../images/fenwick.jpg";
+import marquette from "../images/marquette.png";
 import es from "../images/es.jpg";
 import parade from "../images/liam_parade.jpg";
 import teals from "../images/teals.png";
@@ -33,6 +34,12 @@ const useStyles = makeStyles({
     width: "10vw",
     marginTop: "12%",
     marginLeft: "25%",
+  },
+
+  marquette: {
+    width: "10vw",
+    marginTop: "12%",
+    marginLeft: "10%",
   },
 
   es: {
@@ -100,20 +107,21 @@ function About() {
               </a>{" "}
               and was fortunate enough to receive a four-year full tuition and
               housing scholarship to Marquette University in Milwaukee,
-              Wisconsin. During my time as an Marquette Evans Scholar, I have
+              Wisconsin. During my time as an Marquette Evans Scholar, I 
               had the opportunity to serve as the chapter's Vice President of
               Finance.
             </p>
           </Grid>
           <Grid item xs={4}>
             <img className={classes.fenwick} src={fenwick} alt="fenwick" />
+            <img className={classes.marquette} src={marquette} alt="marquette" />
           </Grid>
         </Grid>
 
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <p>
-              At Marquette, I live with about sixty other Evans Scholars who
+              At Marquette, I lived with about sixty other Evans Scholars who
               come from similar backgrounds. I served as the treasurer of
               Marquette's chapter of{" "}
               <a
@@ -124,7 +132,7 @@ function About() {
                 the Association for Computing Machinery
               </a>{" "}
               for the 2019-2020 school year. I was re-elected to the same
-              position for the 2020-2021 school year. I am also a member of the{" "}
+              position for the 2020-2021 school year. I was also a member of the{" "}
               <a
                 className={classes.link}
                 href="https://marquette.presence.io/organization/cyber-security-club"
@@ -166,7 +174,7 @@ function About() {
             </p>
 
             <p>
-              In college, I've developed a passion for programming and
+              In college, I developed a passion for programming and
               problem-solving. I love working on personal projects, one of which
               is this site.
             </p>
