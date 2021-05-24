@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import fenwick from "../images/fenwick.jpg";
+import marquette from "../images/marquette.png";
 import es from "../images/es.jpg";
 import parade from "../images/liam_parade.jpg";
 import teals from "../images/teals.png";
@@ -33,6 +34,12 @@ const useStyles = makeStyles({
     width: "10vw",
     marginTop: "12%",
     marginLeft: "25%",
+  },
+
+  marquette: {
+    width: "10vw",
+    marginTop: "12%",
+    marginLeft: "10%",
   },
 
   es: {
@@ -107,6 +114,7 @@ function About() {
           </Grid>
           <Grid item xs={4}>
             <img className={classes.fenwick} src={fenwick} alt="fenwick" />
+            <img className={classes.marquette} src={marquette} alt="marquette" />
           </Grid>
         </Grid>
 
@@ -166,7 +174,7 @@ function About() {
             </p>
 
             <p>
-              In college, I've developed a passion for programming and
+              In college, I developed a passion for programming and
               problem-solving. I love working on personal projects, one of which
               is this site.
             </p>

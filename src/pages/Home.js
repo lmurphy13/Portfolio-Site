@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import lava from "../images/lava.jpg";
-import liam from "../images/liam.jpg";
+import liam from "../images/liam_grad.png";
 import "../App.css";
 
 const useStyles = makeStyles({
