@@ -63,7 +63,7 @@ function Home() {
     <div className={classes.root}>
       <div className={classes.bgImage}>
         <NavBar color="transparent" />
-        <p className={classes.greeting}>Hi! I'm Liam</p>
+        <p className={classes.greeting}>Hi! I'm Liam.</p>
       </div>
 
       <body class="full-height">
