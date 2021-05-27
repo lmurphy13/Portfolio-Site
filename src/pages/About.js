@@ -34,6 +34,7 @@ const useStyles = makeStyles({
     width: "10vw",
     marginTop: "12%",
     marginLeft: "25%",
+    borderRadius: "50%",
   },
 
   marquette: {

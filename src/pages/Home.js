@@ -53,6 +53,7 @@ const useStyles = makeStyles({
 
   liam: {
     width: "22vw",
+    borderRadius: "50%",
   },
 });
 
@@ -70,6 +71,7 @@ function Home() {
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <img className={classes.liam} src={liam} alt="Liam Murphy" />
+           
           </Grid>
 
           <Grid item xs={4}>
