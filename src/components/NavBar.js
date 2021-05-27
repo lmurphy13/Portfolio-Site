@@ -88,14 +88,14 @@ function NavBar() {
             Projects
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             className={classes.link}
             activeClassName={classes.active}
             to="/blog"
             exact
           >
             Blog
-          </NavLink>
+          </NavLink> */}
 
 
           <NavLink

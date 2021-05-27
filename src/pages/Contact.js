@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     fontFamily: "IBM Plex Sans, sans-serif",
     fontSize: "120%",
     marginBottom: "2%",
+    width: "100%",
   },
 
   link: {
