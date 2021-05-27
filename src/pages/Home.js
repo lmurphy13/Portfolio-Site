@@ -43,7 +43,7 @@ const useStyles = makeStyles({
   },
 
   grid: {
-    marginTop: "5%",
+    marginTop: "3%",
     fontSize: "120%",
   },
 
@@ -53,6 +53,7 @@ const useStyles = makeStyles({
 
   liam: {
     width: "22vw",
+    borderRadius: "50%",
   },
 });
 
@@ -70,6 +71,7 @@ function Home() {
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <img className={classes.liam} src={liam} alt="Liam Murphy" />
+           
           </Grid>
 
           <Grid item xs={4}>
@@ -87,6 +89,14 @@ function Home() {
             </p>
 
             <p>
+              I am now a graduate student pursuing a <a
+                className={classes.link}
+                href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
+                target="_blank"
+              >M.S. in Computing</a> with a concentration in Information Assurance and Cyber Defense.
+            </p>
+
+            {/* <p>
               Additionally, I am pursuing my {" "}
               <a
                 className={classes.link}
@@ -98,18 +108,17 @@ function Home() {
               with a concentration in Information Assurance and Cyber Defense. I
               began graduate-level coursework counting towards this degree in
               January 2020.
-            </p>
+            </p> */}
 
             <p>
-              I have been working as a Software Engineer at{" "}
+              Since June 2021, I have been working as a Software Engineer at{" "}
               <a
                 className={classes.link}
                 href="https://astronautics.com/"
                 target="_blank"
               >
                 Astronautics
-              </a>
-              {" "}since June 2021.
+              </a>.
             </p>
 
             {/* <p>
