@@ -11,14 +11,18 @@ const useStyles = makeStyles({
       fontFamily: "IBM Plex Sans, sans-serif",
       background: "#1e1e1e",
       color: "white",
+      width: "80%",
+      paddingLeft: "6%",
+      paddingBottom: "1%",
     },
     title: {
       flexGrow: 1,
       color: "white",
       fontSize: "130%",
       fontFamily: "IBM Plex Sans, sans-serif",
-      padding: "1%",
-      paddingBottom: "-1%",
+      paddingLeft: "1%",
+      paddingTop: "1%",
+      marginBottom: "1%",
     },
     
     paper: {
@@ -33,6 +37,7 @@ const useStyles = makeStyles({
 
     content: {
         padding: "1%",
+        fontSize: "90%",
     }
 
 });
@@ -42,9 +47,11 @@ function BlogPost(props) {
 
     return (
         <div className={classes.root}>
+            <a name={props.title} />
             <Paper elevation={3} className={classes.paper}>
                 <h2 className={classes.title}>{props.title}</h2>
-                <h3 style={{ fontSize: "90%", paddingLeft: "1%" }}>Liam M. Murphy</h3>
+                <strong><span style={{ fontSize: "90%", paddingLeft: "1%" }}>By Liam M. Murphy</span></strong>
+                <br />
                 <span className={classes.date}>Posted {props.date}</span>
 
                 

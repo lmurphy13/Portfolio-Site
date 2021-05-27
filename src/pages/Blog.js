@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import BackToTop from "react-back-to-top-button";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import BlogPost from "../components/BlogPost.js";
@@ -8,9 +11,10 @@ import lava from "../images/lava.jpg";
 import liam from "../images/liam_grad.png";
 import "../App.css";
 
+
 const useStyles = makeStyles({
     root: {
-      height: "100%",
+      height: "100vh",
       minHeight: "100%",
       margin: 0,
       background: "#1e1e1e",
@@ -25,6 +29,17 @@ const useStyles = makeStyles({
   
     link: {
       color: "#468cce",
+      textDecoration: "none",
+    },
+
+    icon: {
+        color: "white",
+        fontSize: "150%",
+    },
+
+    paper: {
+        background: "#303030",
+        color: "white",
     },
   
     bgImage: {
@@ -35,6 +50,26 @@ const useStyles = makeStyles({
       margin: 0,
       position: "relative",
       height: "7vh",
+    },
+
+    greeting: {
+        textAlign: "center",
+        fontFamily: "IBM Plex Sans, sans-serif",
+        fontSize: "120%",
+    },
+
+    disclaimer: {
+        fontFamily: "IBM Plex Sans, sans-serif",
+        color: "white",
+        textAlign: "center",
+    },
+
+    mainTitle: {
+        fontFamily: "IBM Plex Sans, sans-serif",
+        color: "white",
+        textAlign: "center",
+        padding: "1%",
+        paddingBottom: 0,
     },
   });
 
@@ -48,71 +83,50 @@ const useStyles = makeStyles({
             </div>
 
             <body>
-                <Grid container spacing={0} justify="center" className={classes.grid}>
-                    <Grid item xs={4}>
-                        <h3>Latest Posts</h3>
+                <div className={classes.mainTitle}>
+                    <h1>Personal Blog</h1>
+                </div>
+                <h3 className={classes.greeting}>Welcome to my personal blog. Here I will share my thoughts on various topics including technology, games, music, etc.</h3>
+
+                <BackToTop
+                    showOnScrollUp
+                    showAt={100}
+                    speed={1500}
+                    easing="easeInOutQuint"
+                >
+                    <KeyboardArrowUpIcon className={classes.icon} />
+                </BackToTop>
+
+                <Grid container spacing={2} justify="center" className={classes.grid}>
+                <Grid item xs={8}> 
+                        <BlogPost title="Welcome!" date="May 27, 2021">
+                            <p>
+                                Welcome to my blog! This page was created from scratch by me. I did not use any WordPress or HTML templates. This page was created
+                                the same way as the other pages on this React site. If you wish, the code can be found on 
+                                my <a className={classes.link} href="https://liammurphy.me/projects" target="_blank">Projects</a> page. That aside, I'm glad you're here and I hope that my posts will be interesting to you.
+                                In the future, I may implement a way to leave comments on my posts, though this may be some time away.
+                            </p>
+
+                            <p>In the mean time, if you have any questions please visit my <a className={classes.link} href="https://liammurphy.me/contact" target="_blank">Contact</a> page and connect with me there.</p>
+                        </BlogPost>
+
                     </Grid>
-
-                    <Grid item xs={6}> 
-                        <BlogPost title="Test Post Title 1" date="May 27, 2021">
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            In est ante in nibh mauris. Non sodales neque sodales ut etiam sit amet nisl purus. 
-                            Et odio pellentesque diam volutpat commodo sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. 
-                            Lectus proin nibh nisl condimentum id venenatis. Ut enim blandit volutpat maecenas. Risus sed vulputate odio ut. 
-                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Magnis dis parturient montes nascetur ridiculus mus.
-                            </p>
-
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            In est ante in nibh mauris. Non sodales neque sodales ut etiam sit amet nisl purus. 
-                            Et odio pellentesque diam volutpat commodo sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. 
-                            Lectus proin nibh nisl condimentum id venenatis. Ut enim blandit volutpat maecenas. Risus sed vulputate odio ut. 
-                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Magnis dis parturient montes nascetur ridiculus mus.
-                            </p>
-
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            In est ante in nibh mauris. Non sodales neque sodales ut etiam sit amet nisl purus. 
-                            Et odio pellentesque diam volutpat commodo sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. 
-                            Lectus proin nibh nisl condimentum id venenatis. Ut enim blandit volutpat maecenas. Risus sed vulputate odio ut. 
-                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Magnis dis parturient montes nascetur ridiculus mus.
-                            </p>
-
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            In est ante in nibh mauris. Non sodales neque sodales ut etiam sit amet nisl purus. 
-                            Et odio pellentesque diam volutpat commodo sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. 
-                            Lectus proin nibh nisl condimentum id venenatis. Ut enim blandit volutpat maecenas. Risus sed vulputate odio ut. 
-                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Magnis dis parturient montes nascetur ridiculus mus.
-                            </p>
-
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            In est ante in nibh mauris. Non sodales neque sodales ut etiam sit amet nisl purus. 
-                            Et odio pellentesque diam volutpat commodo sed. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. 
-                            Lectus proin nibh nisl condimentum id venenatis. Ut enim blandit volutpat maecenas. Risus sed vulputate odio ut. 
-                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Magnis dis parturient montes nascetur ridiculus mus.
-                            </p>
-                        </BlogPost>
-
-                        <BlogPost title="Post 2" date="May 28, 2021">
-                            <p>
-                                Bla bla bla bla bla bla bla
-                            </p>
-
-                            <img src={liam}></img>
-                        </BlogPost>
+                    
+                    <Grid item xs={4}>
+                        <div style={{ width: "70%", marginLeft: "15%"}}>
+                            <Paper elevation={3} className={classes.paper}>
+                            <h3 style={{ paddingTop: "1%", paddingLeft: "1%", marginBottom: "1%"}}>Latest Posts</h3>
+                            <ul style={{ listStyleType: "none", padding: "1%", paddingTop: 0}}>
+                                <li><a href="#Welcome!" className={classes.link}>Welcome!</a></li>
+                            </ul>
+                            </Paper>
+                        </div>
                     </Grid>
                 </Grid>
             </body>
 
             <footer>
+                <p className={classes.disclaimer}>All opinions are my own and not those of my employer or Marquette University.</p>
                 <Footer />
             </footer>
         </div>

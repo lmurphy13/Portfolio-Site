@@ -23,11 +23,18 @@ const useStyles = makeStyles({
     marginRight: "2%",
     color: "white",
     fontSize: "130%",
+    '&:hover': {
+      color: "#0C2A46",
+    }
   },
 
   active: {
     textDecoration: "underline",
   },
+
+  hover: {
+    color: "#468cce",
+  }
 });
 
 function NavBar() {
@@ -84,11 +91,22 @@ function NavBar() {
           <NavLink
             className={classes.link}
             activeClassName={classes.active}
+            to="/blog"
+            exact
+          >
+            Blog
+          </NavLink>
+
+
+          <NavLink
+            className={classes.link}
+            activeClassName={classes.active}
             to="/resume"
             exact
           >
             Resume
           </NavLink>
+
           <NavLink
             className={classes.link}
             activeClassName={classes.active}
