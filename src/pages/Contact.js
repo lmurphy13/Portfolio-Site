@@ -7,6 +7,7 @@ import { GitHub, LinkedIn, Twitter } from "@material-ui/icons";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import lava from "../images/lava.jpg";
+import publicKey from "../docs/public_key.pem";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -74,7 +75,7 @@ function Contact() {
           spacing={0}
           justify="center"
           className={classes.grid}
-          style={{ marginBottom: "5%" }}
+          style={{ marginBottom: "1%" }}
         >
           <Grid item xs={4}>
             <h3>Contact Information</h3>
@@ -93,6 +94,8 @@ function Contact() {
             If you'd like to contact me, please check out my various
             professional pages and social media.
           </p>
+
+          
         </Grid>
 
         <Grid
@@ -101,6 +104,7 @@ function Contact() {
           justify="center"
           alignItems="center"
           className={classes.grid}
+          style={{ marginLeft: "auto", marginRight: "auto" }}
         >
           <Grid item xs={0}>
             <Paper elevation={3} className={classes.paper}>
@@ -146,6 +150,16 @@ function Contact() {
               liam dot murphy at marquette dot edu
             </span>
           </Paper>
+        </Grid>
+
+        <Grid
+          container
+          spacing={0}
+          justify="center"
+          alignItems="center"
+          className={classes.grid}
+        >
+          <p>If you wish to send me encrypted files, here is my RSA-2048 public key: <a className={classes.link} href={publicKey}>public key</a>.</p>
         </Grid>
 
         <Grid
