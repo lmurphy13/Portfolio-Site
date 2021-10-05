@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import lava from "../images/lava.jpg";
+import lambda from "../images/lambda.png";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -26,14 +27,14 @@ const useStyles = makeStyles({
 
   xinu: {
     height: "20vh",
-    marginTop: "30%",
+    marginTop: "10%",
     marginLeft: "25%",
   },
 
   lambda: {
     height: "20vh",
-    marginTop: "30%",
-    marginLeft: "25%",
+    marginTop: "20%",
+    marginLeft: "50%",
   },
 
   bgImage: {
@@ -61,7 +62,7 @@ function Research() {
       </div>
 
       <body class="full-height">
-        <Grid container spacing={0} justify="left" className={classes.grid}>
+        <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <h3>Research Experience</h3>
             {/* <p>
@@ -90,7 +91,17 @@ function Research() {
                research log
               </a>.
             </p>
+          </Grid>
+          <Grid item xs={4}>
+            <img
+              className={classes.lambda}
+              src={lambda}
+            ></img>
+          </Grid>
+        </Grid>
 
+        <Grid container spacing={0} justify="center" className={classes.grid}>
+          <Grid item xs={4}>
             <h4>Undergraduate</h4>
             <p>
               During the summer of 2019, I worked under the guidance of{" "}
@@ -117,16 +128,6 @@ function Research() {
               device as well as working with Xinu's shell.
             </p>
           </Grid>
-        </Grid>
-
-        <Grid container spacing={0} justify="right" className={classes.grid}>
-        <Grid item xs={4}>
-            <img
-              className={classes.lambda}
-              src={"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/1920px-Lambda_lc.svg.png"}
-            ></img>
-          </Grid>
-
           <Grid item xs={4}>
             <img
               className={classes.xinu}
