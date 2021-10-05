@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import lava from "../images/lava.jpg";
+import lambda from "../images/lambda.png";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -26,8 +27,14 @@ const useStyles = makeStyles({
 
   xinu: {
     height: "20vh",
-    marginTop: "30%",
+    marginTop: "10%",
     marginLeft: "25%",
+  },
+
+  lambda: {
+    height: "20vh",
+    marginTop: "20%",
+    marginLeft: "50%",
   },
 
   bgImage: {
@@ -58,13 +65,44 @@ function Research() {
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <h3>Research Experience</h3>
-            <p>
+            {/* <p>
               Currently, I am exploring possible projects for my Master's
               thesis. I am interested in embedded operating systems, security,
               privacy, and ethical uses of data.
-            </p>
+            </p> */}
 
             <h4>Marquette University</h4>
+            <h4>Graduate</h4>
+            <p>
+              I have recently begun my research for my Master's thesis. I am working under the supervision of {" "}
+              <a
+                className={classes.link}
+                href="http://www.mscs.mu.edu/~brylow/"
+                target="_blank"
+              >
+                Dr. Dennis Brylow
+              </a>.{" "}
+              The area of my research is compiler construction. Further information can be found on my academic website where I am maintaining a {" "}
+              <a
+                className={classes.link}
+                href="https://www.cs.mu.edu/~lmurphy9/research"
+                target="_blank"
+              >
+               research log
+              </a>.
+            </p>
+          </Grid>
+          <Grid item xs={4}>
+            <img
+              className={classes.lambda}
+              src={lambda}
+            ></img>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={0} justify="center" className={classes.grid}>
+          <Grid item xs={4}>
+            <h4>Undergraduate</h4>
             <p>
               During the summer of 2019, I worked under the guidance of{" "}
               <a
@@ -90,7 +128,6 @@ function Research() {
               device as well as working with Xinu's shell.
             </p>
           </Grid>
-
           <Grid item xs={4}>
             <img
               className={classes.xinu}
