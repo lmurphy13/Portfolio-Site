@@ -30,6 +30,12 @@ const useStyles = makeStyles({
     marginLeft: "25%",
   },
 
+  lambda: {
+    height: "20vh",
+    marginTop: "30%",
+    marginLeft: "25%",
+  },
+
   bgImage: {
     backgroundImage: `url(${lava})`,
     backgroundSize: "cover",
@@ -55,16 +61,37 @@ function Research() {
       </div>
 
       <body class="full-height">
-        <Grid container spacing={0} justify="center" className={classes.grid}>
+        <Grid container spacing={0} justify="left" className={classes.grid}>
           <Grid item xs={4}>
             <h3>Research Experience</h3>
-            <p>
+            {/* <p>
               Currently, I am exploring possible projects for my Master's
               thesis. I am interested in embedded operating systems, security,
               privacy, and ethical uses of data.
-            </p>
+            </p> */}
 
             <h4>Marquette University</h4>
+            <h4>Graduate</h4>
+            <p>
+              I have recently begun my research for my Master's thesis. I am working under the supervision of {" "}
+              <a
+                className={classes.link}
+                href="http://www.mscs.mu.edu/~brylow/"
+                target="_blank"
+              >
+                Dr. Dennis Brylow
+              </a>.{" "}
+              The area of my research is compiler construction. Further information can be found on my academic website where I am maintaining a {" "}
+              <a
+                className={classes.link}
+                href="https://www.cs.mu.edu/~lmurphy9/research"
+                target="_blank"
+              >
+               research log
+              </a>.
+            </p>
+
+            <h4>Undergraduate</h4>
             <p>
               During the summer of 2019, I worked under the guidance of{" "}
               <a
@@ -89,6 +116,15 @@ function Research() {
               . This helped to expand the team's knowledge on the framebuffer
               device as well as working with Xinu's shell.
             </p>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={0} justify="right" className={classes.grid}>
+        <Grid item xs={4}>
+            <img
+              className={classes.lambda}
+              src={"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/1920px-Lambda_lc.svg.png"}
+            ></img>
           </Grid>
 
           <Grid item xs={4}>
