@@ -20,7 +20,7 @@ function Footer() {
 
   return (
     <div className={classes.root}>
-      <p>© 2019-2021 - Liam M. Murphy</p>
+      <p>© 2019-2022 - Liam M. Murphy</p>
     </div>
   );
 }
