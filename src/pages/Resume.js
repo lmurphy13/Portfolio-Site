@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
-import resume from "../docs/Resume.pdf";
+import resume from "../docs/Liam_Murphy_Resume.pdf";
 import lava from "../images/lava.jpg";
 import "../App.css";
 
