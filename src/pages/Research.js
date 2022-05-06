@@ -28,13 +28,13 @@ const useStyles = makeStyles({
   xinu: {
     height: "20vh",
     marginTop: "10%",
-    marginLeft: "25%",
+    marginLeft: "25%"
   },
 
   lambda: {
     height: "20vh",
-    marginTop: "20%",
-    marginLeft: "50%",
+    marginTop: "45%",
+    marginLeft: "50%"
   },
 
   bgImage: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles({
   },
 
   filler: {
-    height: "39vh",
+    height: "10vh",
   },
 });
 
@@ -65,31 +65,47 @@ function Research() {
         <Grid container spacing={0} justify="center" className={classes.grid}>
           <Grid item xs={4}>
             <h3>Research Experience</h3>
-            {/* <p>
-              Currently, I am exploring possible projects for my Master's
-              thesis. I am interested in embedded operating systems, security,
-              privacy, and ethical uses of data.
-            </p> */}
 
             <h4>Marquette University</h4>
             <h4>Graduate</h4>
+            
             <p>
-              I have recently begun my research for my Master's thesis. I am working under the supervision of {" "}
+              My master's thesis, titled <i>Improving Compiler Construction Education by Retargeting and Extending a Compiler for Embedded Xinu</i>, deals with improving the
+              pedagogical compiler used to instruct undergraduate and graduate students enrolled in Marquette University's COSC 4400/5400 Compiler Construction course.
+              
+            </p>
+            <p>
+               I argue that, by retargeting the compiler to the most recent Embedded Xinu platform, students can draw upon previously acquired skills in 
+              operating systems to increase their success in learning concepts related to compiler construction.
+            </p>
+            <p>
+              While working under the supervision of {" "}
               <a
                 className={classes.link}
                 href="http://www.mscs.mu.edu/~brylow/"
                 target="_blank"
               >
                 Dr. Dennis Brylow
-              </a>.{" "}
-              The area of my research is compiler construction. Further information can be found on my academic website where I am maintaining a {" "}
+              </a>,{" "} I maintained a {" "}
               <a
                 className={classes.link}
                 href="https://www.cs.mu.edu/~lmurphy9/research"
                 target="_blank"
               >
                research log
-              </a>.
+              </a> on my academic website to track this project's progress.
+            </p>
+
+            <p>
+              This thesis was successfully defended on April 1st, 2022. The full-text document can be found on {" "}
+              <a
+                className={classes.link}
+                href="https://www.proquest.com/docview/2658279769/9925D60F56E04A36PQ/15?accountid=100&parentSessionId=a%2FLZvm5eV3O0fikN3IKrciJ4ceOR73KnPdsqWu3tpOA%3D"
+                target="_blank"
+              >
+                ProQuest
+              </a>
+               , with access provided through Marquette University.
             </p>
           </Grid>
           <Grid item xs={4}>
@@ -138,24 +154,10 @@ function Research() {
             />
           </Grid>
         </Grid>
-
-        {/* <Grid container spacing={0} justify="center" className={classes.grid}>
-          <Grid item xs={4}>
-            <h3>Independent Writings</h3>
-            <p>
-              See below for some essays and articles I've written on various topics interesting to me. 
-              These essays are not affiliated with my formal research at Marquette University.
-            </p>
-
-          </Grid>
-
-          <Grid item xs={4}>
-
-          </Grid>
-        </Grid> */}
       </body>
 
       <footer>
+        <div className={classes.filler}></div>
         <Footer />
       </footer>
     </div>
