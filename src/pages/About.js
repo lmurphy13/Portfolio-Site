@@ -86,7 +86,7 @@ function About() {
           <Grid item xs={4}>
             <h3>Getting to Know Me</h3>
             <p>
-              I'm from Chicago, Illinois. I attended{" "}
+              I'm from Chicago, Illinois. I attended{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://www.fenwickfriars.com/"
@@ -98,7 +98,7 @@ function About() {
               Chicago. I was a caddy for seven years at Park Ridge Country Club
               in Park Ridge, Illinois. During my senior year of high school, I
               applied for the prestigious Chick Evans Scholarship for caddies
-              through the{" "}
+              through the{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://wgaesf.org/"
@@ -124,7 +124,7 @@ function About() {
             <p>
               At Marquette, I lived with about sixty other Evans Scholars who
               come from similar backgrounds. I served as the treasurer of
-              Marquette's chapter of{" "}
+              Marquette's chapter of{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="http://www.mscs.mu.edu/~acm/"
@@ -133,7 +133,7 @@ function About() {
                 the Association for Computing Machinery
               </a>{" "}
               for the 2019-2020 school year. I was re-elected to the same
-              position for the 2020-2021 school year. I was also a member of the{" "}
+              position for the 2020-2021 school year. I was also a member of the{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://marquette.presence.io/organization/cyber-security-club"
@@ -157,7 +157,7 @@ function About() {
           <Grid item xs={4}>
             <h3>Personal Interests</h3>
             <p>
-              Since 2012 I have been a member of the{" "}
+              Since 2012 I have been a member of the{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://shannonrovers.com/"
@@ -193,7 +193,7 @@ function About() {
               Computer Science at a public high school in Milwaukee, Wisconsin.
               This was in partial fulfillment of a course I took called COSC
               3870: Pedagogy of Computer Science. I volunteered with an
-              organization called{" "}
+              organization called{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://www.tealsk12.org/"

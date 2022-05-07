@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
 import { GitHub, LinkedIn, Twitter } from "@material-ui/icons";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
@@ -107,7 +106,7 @@ function Contact() {
           style={{ marginLeft: "auto", marginRight: "auto" }}
         >
           <Grid item xs={0}>
-            <Paper elevation={3} className={classes.paper}>
+            <Paper elevation={3} className={classes.paper}> {/* eslint-disable-next-line */}
               <a href="http://www.github.com/lmurphy13" target="_blank">
                 <GitHub className={classes.icon} />
               </a>
@@ -115,7 +114,7 @@ function Contact() {
           </Grid>
 
           <Grid item xs={0}>
-            <Paper elevation={3} className={classes.paper}>
+            <Paper elevation={3} className={classes.paper}> {/* eslint-disable-next-line */}
               <a
                 href="https://www.linkedin.com/in/liam-murphy-05244114b/"
                 target="_blank"
@@ -126,7 +125,7 @@ function Contact() {
           </Grid>
 
           <Grid item xs={0}>
-            <Paper elevation={3} className={classes.paper}>
+            <Paper elevation={3} className={classes.paper}> {/* eslint-disable-next-line */}
               <a href="https://twitter.com/lmurphy513" target="_blank">
                 <Twitter className={classes.icon} />
               </a>
@@ -171,7 +170,7 @@ function Contact() {
           style={{ marginBottom: "7%" }}
         >
           <p>
-            Here's a link to my{" "}
+            Here's a link to my{" "} {/* eslint-disable-next-line */}
             <a
               className={classes.link}
               href="https://www.cs.mu.edu/~lmurphy9/"

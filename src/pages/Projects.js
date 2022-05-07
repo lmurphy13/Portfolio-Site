@@ -121,7 +121,7 @@ function Projects() {
                     color="white"
                     component="p"
                     className={classes.type}
-                  >
+                  > {/* eslint-disable-next-line */}
                     <a
                       href="https://processing.org/"
                       target="_blank"
@@ -136,7 +136,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a href="https://github.com/lmurphy13/Drift" target="_blank">
                   <GitHub className={classes.icon} />
                 </a>
@@ -176,7 +176,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a
                   href="https://github.com/lmurphy13/Account-Balance-Mailer"
                   target="_blank"
@@ -220,7 +220,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a
                   href="https://github.com/lmurphy13/COSC-3550-Assignment-5"
                   target="_blank"
@@ -262,7 +262,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a
                   href="https://github.com/lmurphy13/console-game"
                   target="_blank"
@@ -310,7 +310,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a
                   href="https://github.com/lmurphy13/Portfolio-Site"
                   target="_blank"
@@ -350,10 +350,11 @@ function Projects() {
                     className={classes.type}
                   >
                     A Perlin Noise animation written in Processing. It is
-                    inspired from{" "}
+                    inspired from{" "} {/* eslint-disable-next-line */}
                     <a
                       className={classes.link}
                       href="https://www.youtube.com/watch?v=IKB1hWWedMk"
+                      target="_blank"
                     >
                       this{" "}
                     </a>{" "}
@@ -361,7 +362,7 @@ function Projects() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions> {/* eslint-disable-next-line */}
                 <a
                   href="https://github.com/lmurphy13/PerlinNoise"
                   target="_blank"

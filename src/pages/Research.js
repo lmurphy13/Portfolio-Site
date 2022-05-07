@@ -79,14 +79,14 @@ function Research() {
               operating systems to increase their success in learning concepts related to compiler construction.
             </p>
             <p>
-              While working under the supervision of {" "}
+              While working under the supervision of {" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="http://www.mscs.mu.edu/~brylow/"
                 target="_blank"
               >
                 Dr. Dennis Brylow
-              </a>,{" "} I maintained a {" "}
+              </a>,{" "} I maintained a {" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://www.cs.mu.edu/~lmurphy9/research"
@@ -97,7 +97,7 @@ function Research() {
             </p>
 
             <p>
-              This thesis was successfully defended on April 1st, 2022. The full-text document can be found on {" "}
+              This thesis was successfully defended on April 1st, 2022. The full-text document can be found on {" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://www.proquest.com/docview/2658279769/9925D60F56E04A36PQ/15?accountid=100&parentSessionId=a%2FLZvm5eV3O0fikN3IKrciJ4ceOR73KnPdsqWu3tpOA%3D"
@@ -112,6 +112,7 @@ function Research() {
             <img
               className={classes.lambda}
               src={lambda}
+              alt="A white Greek Lambda"
             ></img>
           </Grid>
         </Grid>
@@ -120,7 +121,7 @@ function Research() {
           <Grid item xs={4}>
             <h4>Undergraduate</h4>
             <p>
-              During the summer of 2019, I worked under the guidance of{" "}
+              During the summer of 2019, I worked under the guidance of{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="http://www.mscs.mu.edu/~brylow/"
@@ -132,7 +133,7 @@ function Research() {
               I helped to port a framebuffer device driver to the Raspberry Pi 3
               B+ running Embedded Xinu. After that project was completed, I
               began development on a window abstraction device driver and a
-              shell multiplexer similar to the popular program{" "}
+              shell multiplexer similar to the popular program{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://github.com/tmux/tmux"

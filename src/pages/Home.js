@@ -76,7 +76,7 @@ function Home() {
 
           <Grid item xs={4}>
             <p>
-              I am a graduate of{" "}
+              I am a graduate of{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://www.marquette.edu"
@@ -88,7 +88,7 @@ function Home() {
               with a minor in Spanish in May 2021.
             </p>
 
-            <p>
+            <p> {/* eslint-disable-next-line */}
               I am now a graduate student pursuing a <a
                 className={classes.link}
                 href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
@@ -111,7 +111,7 @@ function Home() {
             </p> */}
 
             <p>
-              Since June 2021, I have been working as a Software Engineer at{" "}
+              Since June 2021, I have been working as a Software Engineer at{" "} {/* eslint-disable-next-line */}
               <a
                 className={classes.link}
                 href="https://astronautics.com/"
