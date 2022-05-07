@@ -24,14 +24,14 @@ const useStyles = makeStyles({
     backgroundPosition: "center",
     margin: 0,
     position: "relative",
-    height: "40vh",
+    height: "30vh",
   },
 
   greeting: {
     textAlign: "center",
     color: "white",
     fontSize: "300%",
-    marginTop: "10%",
+    marginTop: "7%",
     fontFamily: "IBM Plex Sans, sans-serif",
   },
 
