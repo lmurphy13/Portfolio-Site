@@ -76,7 +76,7 @@ function Home() {
 
           <Grid item xs={4}>
             <p>
-              I am a recent graduate of{" "}
+              I am a graduate of{" "}
               <a
                 className={classes.link}
                 href="https://www.marquette.edu"
