@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import lava from "../images/lava.jpg";
-import liam from "../images/liam_grad.png";
+import liam from "../images/grad2022_cropped.jpg";
 import "../App.css";
 
 const useStyles = makeStyles({
@@ -83,32 +83,19 @@ function Home() {
                 target="_blank"
               >
                 Marquette University
-              </a>
-              . I completed my Bachelor of Science degree in Computer Science
+              </a>,{" "}
+
+              having earned a <a
+                className={classes.link}
+                href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
+                target="_blank"
+              >M.S. in Computing</a> with a concentration in Information Assurance and Cyber Defense in May 2022.
+            </p>
+
+            <p>
+              I also earned my Bachelor of Science degree in Computer Science
               with a minor in Spanish in May 2021.
             </p>
-
-            <p> {/* eslint-disable-next-line */}
-              I am now a graduate student pursuing a <a
-                className={classes.link}
-                href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
-                target="_blank"
-              >M.S. in Computing</a> with a concentration in Information Assurance and Cyber Defense.
-            </p>
-
-            {/* <p>
-              Additionally, I am pursuing my {" "}
-              <a
-                className={classes.link}
-                href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
-                target="_blank"
-              >
-                Master of Science degree in Computing
-              </a>{" "}
-              with a concentration in Information Assurance and Cyber Defense. I
-              began graduate-level coursework counting towards this degree in
-              January 2020.
-            </p> */}
 
             <p>
               Since June 2021, I have been working as a Software Engineer at{" "} {/* eslint-disable-next-line */}
