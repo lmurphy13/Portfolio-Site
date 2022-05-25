@@ -53,7 +53,7 @@ const useStyles = makeStyles({
 
   liam: {
     width: "22vw",
-    borderRadius: "100px",
+    borderRadius: "50%",
   },
 });
 
