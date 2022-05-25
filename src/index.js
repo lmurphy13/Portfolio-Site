@@ -7,7 +7,6 @@ import Research from "./pages/Research";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
 import "./App.css";
 
 ReactDOM.render(
@@ -19,7 +18,6 @@ ReactDOM.render(
       <Route path="/projects" component={Projects} />
       <Route path="/resume" component={Resume} />
       <Route path="/contact" component={Contact} />
-      <Route path="/blog" component={Blog} />
     </Switch>
   </BrowserRouter>,
 
