@@ -85,8 +85,9 @@ function Home() {
                 Marquette University
               </a>,{" "}
 
+              {/* eslint-disable-next-line */}
               having earned a <a
-                className={classes.link}
+                className={classes.link} 
                 href="https://www.marquette.edu/computer-science/graduate-program-computing.php"
                 target="_blank"
               >M.S. in Computing</a> with a concentration in Information Assurance and Cyber Defense in May 2022.
